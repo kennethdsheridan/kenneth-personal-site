@@ -10,7 +10,7 @@ export default function Home() {
       <section className="mx-auto grid max-w-7xl gap-12 px-5 py-20 sm:px-8 lg:grid-cols-[1.12fr_0.88fr] lg:py-28">
         <div>
           <p className="font-mono text-xs uppercase tracking-[0.34em] text-gold">Defense AI infrastructure engineering</p>
-          <h1 className="mt-6 max-w-5xl text-5xl font-semibold tracking-[-0.06em] text-foreground sm:text-7xl lg:text-8xl">
+          <h1 className="marine-display-title mt-6 max-w-5xl text-5xl text-foreground sm:text-7xl lg:text-8xl">
             Systems for AI, robotics, and machines that have to keep working.
           </h1>
           <p className="mt-8 max-w-3xl text-lg leading-9 text-muted sm:text-xl">

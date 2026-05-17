@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+:root {
+  --background: #090908;
+  --foreground: #f4efe5;
+  --muted: #b9ad9d;
+  --panel: #14130f;
+  --panel-strong: #1d1a14;
+  --line: rgba(244, 239, 229, 0.14);
+  --gold: #d7a84c;
+  --gold-soft: rgba(215, 168, 76, 0.18);
+  --olive: #74725a;
+  --blueprint: #83a3aa;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-panel: var(--panel);
+  --color-panel-strong: var(--panel-strong);
+  --color-line: var(--line);
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --color-olive: var(--olive);
+  --color-blueprint: var(--blueprint);
+  --font-sans: Arial, Helvetica, sans-serif;
+  --font-mono: "SFMono-Regular", "Cascadia Code", "Liberation Mono", Menlo, Consolas, monospace;
+}
+
+html {
+  background: var(--background);
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(215, 168, 76, 0.15), transparent 34rem),
+    radial-gradient(circle at 80% 12%, rgba(131, 163, 170, 0.1), transparent 28rem),
+    linear-gradient(180deg, #090908 0%, #11100d 52%, #090908 100%);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: rgba(215, 168, 76, 0.34);
+  color: #fff8ea;
+}
+
+.watermark {
+  position: fixed;
+  right: max(-8rem, -10vw);
+  top: 7rem;
+  z-index: 0;
+  width: min(52rem, 78vw);
+  opacity: 0.095;
+  pointer-events: none;
+  filter: saturate(0.8) contrast(1.1);
+}
+
+.watermark img {
+  height: auto;
+  width: 100%;
+}
+
+.content-layer {
+  position: relative;
+  z-index: 1;
+}
+
+.terminal-rule {
+  background: linear-gradient(90deg, transparent, rgba(215, 168, 76, 0.75), transparent);
+  height: 1px;
+}
+
+@media (max-width: 768px) {
+  .watermark {
+    right: -14rem;
+    top: 11rem;
+    width: 38rem;
+    opacity: 0.07;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

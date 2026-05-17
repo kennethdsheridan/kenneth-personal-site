@@ -24,7 +24,7 @@ function ResumePanel({ title, children }: { title: string; children: React.React
 export function ResumeDocument() {
   return (
     <article className="overflow-hidden rounded-[2rem] border border-[#d9d9d2] bg-white text-[#15140f] shadow-2xl shadow-black/20">
-      <header className="relative border-b border-[#c7a24a] bg-[linear-gradient(135deg,rgba(184,134,45,0.10),transparent_34%),linear-gradient(180deg,#ffffff_0%,#f7f7f3_100%)] p-6 sm:p-10">
+      <header className="relative border-b border-[#c7a24a] bg-[linear-gradient(135deg,rgba(184,134,45,0.10),transparent_34%),linear-gradient(180deg,#ffffff_0%,#f7f7f3_100%)] px-6 pb-6 pt-9 sm:px-10 sm:pb-10 sm:pt-12">
         <div className="absolute inset-x-0 top-0 h-1.5 bg-[linear-gradient(90deg,#050505,#b8862d,#b31b1b,#4b5320)]" />
         <div className="grid gap-6 sm:grid-cols-[1fr_7rem]">
           <div>
